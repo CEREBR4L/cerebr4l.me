@@ -1,0 +1,14 @@
+<div class="cont">
+	<div>
+		<h1>{{ title }}</h1>
+		<p class="sub">{{ subTitle }}</p>
+	</div>
+	
+	<div class="projects" ng-repeat="project in projects">
+		<a class="link" ng-href="{{project.link}}"><h2>{{ project.title }}</h2></a>
+		<p class="project-desc">{{ project.desc }}</p>
+	</div>
+
+</div>
+
+

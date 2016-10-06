@@ -1,0 +1,27 @@
+[
+	{
+		"title": "Cerebral.online",
+		"link": "http://cerebral.online/",
+		"desc": "My current portfolio page."
+	},
+	{
+		"title": "http://linkr.xyz/",
+		"link": "http://linkr.xyz/",
+		"desc": "A URL minifiying app, with a public api as well as an option for private links."
+	},
+	{
+		"title": "Mehssager",
+		"link": "https://mehssager.herokuapp.com/",
+		"desc": "The very best app in the messaging world... forget all these instant messengers and communicate with your friends the cool way, with mehssager!"
+	},
+	{
+		"title": "Corn",
+		"link": "https://github.com/CEREBR4L/Corn",
+		"desc": "A MEAN stack app skeleton with gulp, browserSync and minifying."
+	},
+	{
+		"title": "Corn Frontend",
+		"link": "https://github.com/CEREBR4L/Corn-frontend",
+		"desc": "Angular Skeleton with sass, babel and minifying using gulp."
+	}
+]

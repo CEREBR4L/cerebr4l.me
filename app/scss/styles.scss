@@ -1,0 +1,91 @@
+@mixin padding-margin-reset(){
+	margin: 0;
+	padding: 0;
+}
+
+@mixin set-margin($size){
+	margin: $size;
+}
+
+@mixin set-vertical-margin($size){
+	margin-top: $size;
+	margin-bottom: $size;
+}
+
+@mixin set-padding($size){
+	padding: $size;
+}
+
+@mixin set-vertical-padding($size){
+	padding-top: $size;
+	padding-bottom: $size;
+}
+
+@mixin set-border-radius($radius){
+	border-radius: $radius;
+}
+
+@mixin set-heading($size, $weight, $opacity){
+	font-size: $size; 
+	font-weight: $weight;
+	opacity: $opacity; 
+}
+
+$primary-color: #EC0868;
+$dark-color: #30323D;
+$darker-color: #20222D;
+$light-color: #E8E9EB;
+
+
+$fonts: 'Oxygen', sans-serif;
+
+body{
+	@include padding-margin-reset();
+	min-height: 100vh;
+}
+
+.link { text-decoration: none; }
+.link:hover { opacity: 0.7; }
+
+.cont{
+	background-color: $dark-color;
+	min-height: 100vh;
+	@include padding-margin-reset()
+
+	h1{
+		color: $darker-color;
+		font-family: $fonts;
+		text-align: center;
+		@include set-heading(3.5em, 300, 1)
+		@include padding-margin-reset()
+		@include set-vertical-padding(40px)
+	}
+
+	.projects{
+		width: 50%;
+		margin: 0 auto;
+		@include set-vertical-padding(10px)
+	}
+
+	.project-desc{
+		font-family: $fonts;
+		color: $light-color;
+		@include set-heading(1em, 300, 1)
+	}
+
+	h2{
+		color: $primary-color;
+		font-family: $fonts;
+		@include set-heading(1.25em, 300, 1)
+	}
+	
+	.sub{
+		font-family: $fonts;
+		color: $light-color;
+		text-align: center;
+		@include set-heading(1em, 300, 1)
+		@include padding-margin-reset()
+	}
+
+}
+
