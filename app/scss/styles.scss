@@ -34,7 +34,6 @@ $fonts: 'Oxygen', sans-serif;
 
 body{
 	@include padding-margin-reset();
-
 	min-height: 100vh;
 	background-color: $dark-color;
 }
@@ -55,13 +54,11 @@ body{
 		@include set-vertical-padding(30px)
 	}
 
-
 	.projects{
+		@include set-vertical-padding(15px)
 		width: 50%;
 		margin: 0 auto;
 		display: flex;
-
-		@include set-vertical-padding(15px)
 
 		.bar{
 			flex: 1;
@@ -76,15 +73,12 @@ body{
 		}
 
 		@media (max-width: 1100px) {
-			.bar{
-				display: none;
-			}
+			.bar{ display: none; }
 
 			.content{
 				width: 90%;
 				padding: 0 5%;
 			}
-
 		}
 	}
 
@@ -101,10 +95,9 @@ body{
 	}
 
 	h2{
-		font-family: $fonts;
-
 		@include set-vertical-margin(5px)
 		@include set-heading(1.25em, 400, 1)
+		font-family: $fonts;
 
 		.link{ color: $primary-color; }
 	}
@@ -118,17 +111,16 @@ body{
 		text-align: center;
 		padding: 0 5%;
 	}
-
 }
 
 .footer{
+	@include set-vertical-padding(20px)
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 50px;
 	color: $primary-color;
-
-	@include set-vertical-padding(20px)
 
 	i{
 		background-color: $darker-color;
@@ -138,7 +130,6 @@ body{
 		width: 1em;
 	}
 }
-
 /* 	ICON FONT
  *	font icon pack in four line lol.... totes readable. */
 @font-face { font-family: 'fontello'; src: url('../fonts/fontello.eot?37440344'); src: url('../fonts/fontello.eot?37440344#iefix') format('embedded-opentype'), url('../fonts/fontello.woff2?37440344') format('woff2'), url('../fonts/fontello.woff?37440344') format('woff'), url('../fonts/fontello.ttf?37440344') format('truetype'), url('../fonts/fontello.svg?37440344#fontello') format('svg'); font-weight: normal; font-style: normal;}
