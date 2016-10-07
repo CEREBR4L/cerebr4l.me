@@ -3,27 +3,21 @@
 	padding: 0;
 }
 
-@mixin set-margin($size){
-	margin: $size;
-}
+@mixin set-margin($size){ margin: $size; }
 
 @mixin set-vertical-margin($size){
 	margin-top: $size;
 	margin-bottom: $size;
 }
 
-@mixin set-padding($size){
-	padding: $size;
-}
+@mixin set-padding($size){ padding: $size; }
 
 @mixin set-vertical-padding($size){
 	padding-top: $size;
 	padding-bottom: $size;
 }
 
-@mixin set-border-radius($radius){
-	border-radius: $radius;
-}
+@mixin set-border-radius($radius){ border-radius: $radius; }
 
 @mixin set-heading($size, $weight, $opacity){
 	font-size: $size; 
@@ -36,7 +30,6 @@ $dark-color: #30323D;
 $darker-color: #20222D;
 $light-color: #E8E9EB;
 
-
 $fonts: 'Oxygen', sans-serif;
 
 body{
@@ -46,13 +39,8 @@ body{
 	background-color: $dark-color;
 }
 
-.link {
-	text-decoration: none; 
-}
-
-.link:hover { 
-	opacity: 0.7; 
-}
+.link { text-decoration: none; }
+.link:hover { opacity: 0.7; }
 
 .cont{
 	@include padding-margin-reset();
@@ -101,9 +89,7 @@ body{
 	}
 
 	@media (max-width: 1100px) {
-		.projects{
-			width: 100%;
-		}
+		.projects{ width: 100%; }
 	}
 
 	.project-desc{
@@ -120,9 +106,7 @@ body{
 		@include set-vertical-margin(5px)
 		@include set-heading(1.25em, 400, 1)
 
-		.link{
-			color: $primary-color; 
-		}
+		.link{ color: $primary-color; }
 	}
 	
 	.sub{
@@ -133,7 +117,6 @@ body{
 		color: $light-color;
 		text-align: center;
 		padding: 0 5%;
-
 	}
 
 }
@@ -162,4 +145,3 @@ body{
 @media screen and (-webkit-min-device-pixel-ratio:0) { @font-face { font-family: 'fontello'; src: url('../font/fontello.svg?37440344#fontello') format('svg');}}
 [class^="i"]:before, [class*="i"]:before { font-family: "fontello"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; text-align: center; /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; /* Font smoothing. That was taken from TWBS */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .i1:before { content: '\e800'; } /* '' */ .i5:before { content: '\e801'; } /* '' */ .i2:before { content: '\e802'; } /* '' */ .i6:before { content: '\e804'; } /* '' */ .i3:before { content: '\e807'; } /* '' */ .i9:before { content: '\e809'; } /* '' */ .i7:before { content: '\e80c'; } /* '' */ .i4:before { content: '\e811'; } /* '' */ .i8:before { content: '\e812'; } /* '' */
-
