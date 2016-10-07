@@ -156,30 +156,10 @@ body{
 	}
 }
 
-
-/*ICON FONT*/
-@font-face {
-  font-family: 'fontello';
-  src: url('../fonts/fontello.eot?37440344');
-  src: url('../fonts/fontello.eot?37440344#iefix') format('embedded-opentype'),
-       url('../fonts/fontello.woff2?37440344') format('woff2'),
-       url('../fonts/fontello.woff?37440344') format('woff'),
-       url('../fonts/fontello.ttf?37440344') format('truetype'),
-       url('../fonts/fontello.svg?37440344#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?37440344#fontello') format('svg');
-  }
-}
-
- //font icon pack in two line lol.... totes readable.
- [class^="i"]:before, [class*="i"]:before { font-family: "fontello"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; text-align: center; /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; /* Font smoothing. That was taken from TWBS */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
- .i1:before { content: '\e800'; } /* '' */ .i5:before { content: '\e801'; } /* '' */ .i2:before { content: '\e802'; } /* '' */ .i6:before { content: '\e804'; } /* '' */ .i3:before { content: '\e807'; } /* '' */ .i9:before { content: '\e809'; } /* '' */ .i7:before { content: '\e80c'; } /* '' */ .i4:before { content: '\e811'; } /* '' */ .i8:before { content: '\e812'; } /* '' */
+/* 	ICON FONT
+ *	font icon pack in four line lol.... totes readable. */
+@font-face { font-family: 'fontello'; src: url('../fonts/fontello.eot?37440344'); src: url('../fonts/fontello.eot?37440344#iefix') format('embedded-opentype'), url('../fonts/fontello.woff2?37440344') format('woff2'), url('../fonts/fontello.woff?37440344') format('woff'), url('../fonts/fontello.ttf?37440344') format('truetype'), url('../fonts/fontello.svg?37440344#fontello') format('svg'); font-weight: normal; font-style: normal;}
+@media screen and (-webkit-min-device-pixel-ratio:0) { @font-face { font-family: 'fontello'; src: url('../font/fontello.svg?37440344#fontello') format('svg');}}
+[class^="i"]:before, [class*="i"]:before { font-family: "fontello"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; text-align: center; /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; /* Font smoothing. That was taken from TWBS */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.i1:before { content: '\e800'; } /* '' */ .i5:before { content: '\e801'; } /* '' */ .i2:before { content: '\e802'; } /* '' */ .i6:before { content: '\e804'; } /* '' */ .i3:before { content: '\e807'; } /* '' */ .i9:before { content: '\e809'; } /* '' */ .i7:before { content: '\e80c'; } /* '' */ .i4:before { content: '\e811'; } /* '' */ .i8:before { content: '\e812'; } /* '' */
 
