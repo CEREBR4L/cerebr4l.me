@@ -8,5 +8,5 @@ angular.module('app').controller('home', function homeController($scope, getProj
 	getProjects.getData().then((resp) => {
 		$scope.projects = resp.data;
 	});
-	
+
 });

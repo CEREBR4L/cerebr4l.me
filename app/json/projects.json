@@ -15,6 +15,11 @@
 		"desc": "The very best app in the messaging world... forget all these instant messengers and communicate with your friends the cool way, with mehssager!"
 	},
 	{
+		"title": "SSCRIBE",
+		"link": "https://github.com/CEREBR4L/scribe-badan",
+		"desc": "An app to create stories through collaboration, start a story or add to someone elses. A story could go on forever it could be done after two collaborators, who knows."
+	},
+	{
 		"title": "Corn",
 		"link": "https://github.com/CEREBR4L/Corn",
 		"desc": "A MEAN stack app skeleton with gulp, browserSync and minifying."
