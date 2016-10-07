@@ -179,49 +179,7 @@ body{
   }
 }
 
- 
- [class^="i"]:before, [class*="i"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  //margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
- 
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  //margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
- 
-.i1:before { content: '\e800'; } /* '' */
-.i5:before { content: '\e801'; } /* '' */
-.i2:before { content: '\e802'; } /* '' */
-.i6:before { content: '\e804'; } /* '' */
-.i3:before { content: '\e807'; } /* '' */
-.i9:before { content: '\e809'; } /* '' */
-.i7:before { content: '\e80c'; } /* '' */
-.i4:before { content: '\e811'; } /* '' */
-.i8:before { content: '\e812'; } /* '' */
+ //font icon pack in two line lol.... totes readable.
+ [class^="i"]:before, [class*="i"]:before { font-family: "fontello"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; text-align: center; /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; /* Font smoothing. That was taken from TWBS */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+ .i1:before { content: '\e800'; } /* '' */ .i5:before { content: '\e801'; } /* '' */ .i2:before { content: '\e802'; } /* '' */ .i6:before { content: '\e804'; } /* '' */ .i3:before { content: '\e807'; } /* '' */ .i9:before { content: '\e809'; } /* '' */ .i7:before { content: '\e80c'; } /* '' */ .i4:before { content: '\e811'; } /* '' */ .i8:before { content: '\e812'; } /* '' */
 
